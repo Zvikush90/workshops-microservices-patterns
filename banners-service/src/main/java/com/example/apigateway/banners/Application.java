@@ -31,6 +31,8 @@ public class Application {
         port(port);
         staticFileLocation("/webapp");
 
+        //TODO: register w Eureka
+
         get("/", (req, resp) -> {
 
             URI rootFolder = Application.class.getResource("/webapp").toURI();
